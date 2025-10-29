@@ -6,7 +6,7 @@ services:
       context: ./service-discovery
     container_name: service-discovery
     ports:
-     - "8761:8080"
+     - "8761:8761"
     volumes:
      - ./service-discovery:/app
      - ~/.m2:/root/.m2
@@ -37,7 +37,7 @@ services:
     depends_on:
      - service-discovery
     environment:
-      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8080/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8761/eureka/
     networks:
      - app-network
 
