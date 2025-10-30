@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.netbox</groupId>
     <artifactId>infrastructure-service</artifactId> <version>0.0.1-SNAPSHOT</version>
-    <name>infrastructure-service</name> ```
+    <name>infrastructure-service</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
