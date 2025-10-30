@@ -23,7 +23,7 @@ services:
     depends_on:
      - service-discovery
     environment:
-      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8080/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8761/eureka/
     networks:
      - app-network
 
@@ -52,7 +52,7 @@ services:
      - service-discovery
      - organization-service 
     environment:
-      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8080/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8761/eureka/
     networks:
      - app-network
 
@@ -67,7 +67,7 @@ services:
      - service-discovery
      - organization-service 
     environment:
-      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8080/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8761/eureka/
     networks:
      - app-network
 
@@ -86,7 +86,7 @@ services:
      - inventory-service
      - infrastructure-service
     environment:
-      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8080/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-discovery:8761/eureka/
       JWT_SECRET: UmaSenhaSuperSeguraDoMeuApp
     networks:
      - app-network
